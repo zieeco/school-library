@@ -1,13 +1,15 @@
 class Nameable
   def correct_name
-    raise NotImplementedError
+    raise 'NotImplementedError'
   end
 end
 
 class Decorator < Nameable
+  attr_accessor :nameable
+
   def initialize(nameable)
-    @nameable = nameable
     super()
+    @nameable = nameable
   end
 
   def correct_name
