@@ -29,5 +29,7 @@ class Person < Nameable
     @age >= 18 || parent_permission
   end
 
-  private :is_of_age?
+  def _of_age?
+    @gae >= 18
+  end
 end
