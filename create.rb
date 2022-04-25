@@ -47,7 +47,7 @@ class CreatePeople
     specialization = gets.chomp
     print 'Enter teachers name: '
     name = gets.chomp
-    teacher = Teacher.new(specialization: @specialization, age: age, name: name)
+    teacher = Teacher.new(specialization: specialization, age: age, name: name)
     @persons << teacher
     puts 'Teacher created successfully'
   end
