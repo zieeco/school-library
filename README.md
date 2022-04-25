@@ -45,13 +45,19 @@ $ cd school-library
 $ ruby filename.rb
 ```
 
-## Author
+## Authors
 
 👤 **Isaac Imaobong Samuel**
 
 - GitHub: [@zieeco](https://github.com/zieeco)
 - Twitter: [@zieecodes](https://twitter.com/zieecodes)
 - LinkedIn: [@Isaac Imaobong Samuel](https://www.linkedin.com/in/isaac-imaobong-samuel/)
+
+👤 **Francis Verissimo**
+
+- GitHub: [@githubhandle](https://github.com/VTY1999)
+- Twitter: [@twitterhandle](https://twitter.com/verissimoty?s=09)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/francis-o-verissimo/)
 
 
 ## 🤝 Contributing
