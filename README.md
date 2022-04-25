@@ -47,11 +47,15 @@ $ ruby filename.rb
 
 ## Authors
 
+**Author 1**
+
 👤 **Isaac Imaobong Samuel**
 
 - GitHub: [@zieeco](https://github.com/zieeco)
 - Twitter: [@zieecodes](https://twitter.com/zieecodes)
 - LinkedIn: [@Isaac Imaobong Samuel](https://www.linkedin.com/in/isaac-imaobong-samuel/)
+
+**Author 2**
 
 👤 **Francis Verissimo**
 
