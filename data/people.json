@@ -1,14 +1,14 @@
 [
     {
         "id": 809,
-        "occupation": "Student",   
+        "occupation": "Student",
         "name": "anythng",
         "age": 399,
         "parent_permisrmission": true
     },
     {
         "id": 35,
-        "occupation": "Teacher",   
+        "occupation": "Teacher",
         "name": "Mark",
         "age": 59,
         "specialization": "React"

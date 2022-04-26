@@ -1,32 +1,12 @@
 [
-
-    {
-        "date": "2/2/2022",
-        "book":{ 
-            "title": "John Doe", 
-            "author": "Peter Link\n" 
-          },
-        "person": {
-            "id": 809,
-            "name": "anythng",
-            "age": 399,
-            "parent_permission": true
-    }
-
-    },
-    {
-        "date": "2/5/2012",
-        "book":{ 
-            "title": "Man Downn", 
-            "author": "Luke Cage\n" 
-          },
-        "teacher": {
-            "id": 35,
-            "name": "Mark",
-            "age": 59,
-            "specialization": "React"
-    }
-
-    }
-
+  {
+    "date": "1/1/2010",
+    "book_index": 0,
+    "person_index": 0
+  },
+  {
+    "date": "02/02/2020",
+    "book_index": 1,
+    "person_index": 1
+  }
 ]
