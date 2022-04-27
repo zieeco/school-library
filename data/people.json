@@ -1,38 +1,14 @@
 [
   {
+    "occupation": "Student",
+    "name": "dan",
+    "age": 45,
+    "parent_permission": true
+  },
+  {
     "occupation": "Teacher",
-    "name": "Mark",
+    "name": "harry",
     "age": 59,
-    "specialization": null
-  },
-  {
-    "occupation": "Student",
-    "name": "anythng",
-    "age": 399,
-    "parent_permission": true
-  },
-  {
-    "occupation": "Teacher",
-    "name": "fgh",
-    "age": 67,
-    "specialization": null
-  },
-  {
-    "occupation": "Student",
-    "name": "fgh",
-    "age": 56,
-    "parent_permission": true
-  },
-  {
-    "occupation": "Student",
-    "name": "ty",
-    "age": 56,
-    "parent_permission": true
-  },
-  {
-    "occupation": "Teacher",
-    "name": "gji",
-    "age": 78,
-    "specialization": "hjk"
+    "specialization": "geo"
   }
 ]
