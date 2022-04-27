@@ -1,8 +1,10 @@
 [
-    { "title": "John Doe",
-      "author": "Peter Link\n"
-    },
-    { "title": "Man Downn",
-      "author": "Luke Cage\n"
-    }
+  { 
+    "title": "John Doe",
+    "author": "Peter Link\n"
+  },
+  { 
+    "title": "Man Downn",
+    "author": "Luke Cage\n"
+  }
 ]

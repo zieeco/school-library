@@ -56,11 +56,11 @@ class CreatePeople
     parent_permission = gets.chomp.downcase
     case parent_permission
     when 'n'
-      student = Student.new(age: age, name: name, parent_permission: parent_permission, classroom: @classroom)
+      student = Student.new(age, name, false, classroom: @classroom)
       @persons << student
       puts 'Student doesn\'t have parent permission, can\'t rent books'
     when 'y'
-      student = Student.new(age: age, name: name, parent_permission: parent_permission, classroom: @classroom)
+      student = Student.new(age, name, true, classroom: @classroom)
       @persons << student
       puts 'Student created successfully'
     end
@@ -74,7 +74,7 @@ class CreatePeople
     specialization = gets.chomp
     print 'Enter teachers name: '
     name = gets.chomp
-    teacher = Teacher.new(specialization: specialization, age: age, name: name)
+    teacher = Teacher.new(specialization, age, name)
     @persons << teacher
     puts 'Teacher created successfully'
   end
@@ -108,5 +108,10 @@ class CreatePeople
     @rentals << rental
 
     puts 'Rental created successfully'
+  end
+  def run
+    @persons = read_person
+    @books = read_book
+    @rentals = read_rentals
   end
 end
