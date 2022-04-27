@@ -4,9 +4,9 @@ def read_person
     persons = JSON.parse(File.read('./data/people.json'))
     persons.map do |person|
       if person['occupation'] == 'Teacher'
-        Teacher.new(person['age'], person['specialization'], person['name'])
+        Teacher.new(person['name'], person['age'], person['specialization'])
       else
-        Student.new(person['age'], person['classroom'], person['name'], person['parent_permission'])
+        Student.new(person['name'], person['age'], person['classroom'], person['parent_permission'])
       end
     end
   else
@@ -15,8 +15,8 @@ def read_person
 end
 
 def read_book
-  if File.exist?('./data/books.json')
-    books = JSON.parse(File.read('./data/books.json'))
+  if File.exist?('./data/book.json')
+    books = JSON.parse(File.read('./data/book.json'))
     books.map do |book|
       Book.new(book['title'], book['author'])
     end
@@ -60,7 +60,7 @@ def save_persons
 end
 
 def save_books
-  file = File.open('./data/books.json', 'w')
+  file = File.open('./data/book.json', 'w')
   book_store = @books.map do |book|
     { title: book.title, author: book.author }
   end
