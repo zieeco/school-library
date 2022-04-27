@@ -27,9 +27,9 @@ class CreatePeople
       if rental.person.id == id
         test = true
         puts "Person: #{rental.person.name} Date: #{rental.date}, Book: '#{rental.book.title}' by #{rental.book.author}"
-      end  
+      end
     end
-    puts 'Error! Enter correct ID' unless test
+    puts 'No record were found for the given ID' unless test
   end
 
   def create_person
@@ -57,11 +57,11 @@ class CreatePeople
     parent_permission = gets.chomp.downcase
     case parent_permission
     when 'n'
-      student = Student.new(age, name, false, classroom: @classroom)
+      student = Student.new(name, age, false, classroom: @classroom)
       @persons << student
       puts 'Student doesn\'t have parent permission, can\'t rent books'
     when 'y'
-      student = Student.new(age, name, true, classroom: @classroom)
+      student = Student.new(name, age, true, classroom: @classroom)
       @persons << student
       puts 'Student created successfully'
     end
@@ -112,6 +112,7 @@ class CreatePeople
     puts 'Rental created successfully'
     save_rentals(date, person_id, book_id)
   end
+  
   def run
     @persons = read_person
     @books = read_book
