@@ -112,7 +112,7 @@ class CreatePeople
     puts 'Rental created successfully'
     save_rentals(date, person_id, book_id)
   end
-  
+
   def run
     @persons = read_person
     @books = read_book
