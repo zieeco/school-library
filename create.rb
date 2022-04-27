@@ -21,15 +21,15 @@ class CreatePeople
     puts 'To see rentals enter the person ID: '
     id = gets.chomp.to_i
 
-    puts 'Rented Books: '
-    @rentals.each do |rental|
+    puts "Rented Books for #{id}:"
+    test = false
+    @rentals.any? do |rental|
       if rental.person.id == id
+        test = true
         puts "Person: #{rental.person.name} Date: #{rental.date}, Book: '#{rental.book.title}' by #{rental.book.author}"
-      else
-        puts
-        puts 'No record were found for the given ID'
-      end
+      end  
     end
+    puts 'Error! Enter correct ID' unless test
   end
 
   def create_person
@@ -44,6 +44,7 @@ class CreatePeople
     else
       puts 'Invalid input. Try again'
     end
+    save_persons
   end
 
   def create_student
@@ -88,6 +89,7 @@ class CreatePeople
     book = Book.new(title, author)
     @books.push(book)
     puts "Book #{title} created successfully."
+    save_books
   end
 
   def create_rental
@@ -108,6 +110,7 @@ class CreatePeople
     @rentals << rental
 
     puts 'Rental created successfully'
+    save_rentals(date, person_id, book_id)
   end
   def run
     @persons = read_person
